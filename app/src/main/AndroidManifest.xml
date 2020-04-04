@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".plan.PlanActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".bookingconfirmation.BookingConfirmationActivity"></activity>
+        <activity android:name=".confirmedtrips.ConfirmedTripsActivity"></activity>
+        <activity android:name=".bookings.BookingsActivity"></activity>
     </application>
 
 </manifest>

@@ -3,6 +3,8 @@
     <string name="no_date_selected">Inget datum valt</string>
     <string name="no_time_selected">Ingen tid vald</string>
 
-
+    <string name="booking_requests">Bokningsansökningar</string>
+    <string name="booked_trips">Bokade resor</string>
+    <string name="your_booking_is_registered">Din bokning är registrerad!</string>
 
 </resources>

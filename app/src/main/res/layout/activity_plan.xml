@@ -5,7 +5,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".plan.PlanActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -209,6 +209,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/button_submit"
             android:text="Fortsätt"
+            android:enabled="@{viewModel.isSubmittable}"
             android:backgroundTint="@color/colorPrimaryDark"
             android:textColor="@color/white"
             android:layout_margin="32dp"
