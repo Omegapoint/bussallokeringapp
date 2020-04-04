@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bussallokering</string>
+    <string name="no_date_selected">Inget datum valt</string>
+    <string name="no_time_selected">Ingen tid vald</string>
+
+
+
 </resources>
