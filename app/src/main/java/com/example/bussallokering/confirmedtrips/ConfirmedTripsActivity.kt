@@ -28,7 +28,7 @@ class ConfirmedTripsActivity : AppCompatActivity() {
       binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
     })
 
-    viewModel.loadConfirmedTrips()
+    viewModel.loadConfirmedTrips(this)
 
   }
 

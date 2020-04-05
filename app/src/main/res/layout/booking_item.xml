@@ -24,14 +24,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="4dp"
-        android:id="@+id/text_view_date"
+        android:id="@+id/text_view_time_span_from"
         app:layout_constraintTop_toBottomOf="@id/text_view_destination" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="4dp"
-        android:id="@+id/text_view_timespan"
-        app:layout_constraintTop_toBottomOf="@id/text_view_date" />
+        android:id="@+id/text_view_time_span_to"
+        app:layout_constraintTop_toBottomOf="@id/text_view_time_span_from" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

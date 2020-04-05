@@ -28,7 +28,7 @@ class BookingsActivity : AppCompatActivity() {
       binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
     })
 
-    viewModel.loadBookings()
+    viewModel.loadBookings(this)
 
   }
 

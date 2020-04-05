@@ -23,9 +23,9 @@ class ConfirmedTripsAdapter(private val confirmedTrips: List<ConfirmedTrip>) :
 
   // Replace the contents of a view (invoked by the layout manager)
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-    holder.view.findViewById<TextView>(R.id.text_view_origin).text = confirmedTrips[position].origin
-    holder.view.findViewById<TextView>(R.id.text_view_destination).text = confirmedTrips[position].destination
-    holder.view.findViewById<TextView>(R.id.text_view_datetime).text = confirmedTrips[position]
+    holder.view.findViewById<TextView>(R.id.text_view_origin).text = "Från: " + confirmedTrips[position].origin
+    holder.view.findViewById<TextView>(R.id.text_view_destination).text = "Till: " + confirmedTrips[position].destination
+    holder.view.findViewById<TextView>(R.id.text_view_datetime).text = "Avgångstid: " + confirmedTrips[position]
         .localDateTime
         .format(DateTimeFormatter.ofPattern("dd MMM HH:mm"))
   }

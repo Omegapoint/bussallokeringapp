@@ -23,11 +23,10 @@ class BookingsAdapter(private val confirmedTrips: List<Booking>) :
 
   // Replace the contents of a view (invoked by the layout manager)
   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-    holder.view.findViewById<TextView>(R.id.text_view_origin).text = confirmedTrips[position].origin
-    holder.view.findViewById<TextView>(R.id.text_view_destination).text = confirmedTrips[position].destination
-    holder.view.findViewById<TextView>(R.id.text_view_date).text = confirmedTrips[position].date.format(DateTimeFormatter.ofPattern("dd MMM"))
-    holder.view.findViewById<TextView>(R.id.text_view_timespan).text =
-      confirmedTrips[position].startTime.format(DateTimeFormatter.ofPattern("HH:mm")) + "-" + confirmedTrips[position].endTime.format(DateTimeFormatter.ofPattern("HH:mm"))
+    holder.view.findViewById<TextView>(R.id.text_view_origin).text = "Från: " + confirmedTrips[position].origin
+    holder.view.findViewById<TextView>(R.id.text_view_destination).text = "Till: " + confirmedTrips[position].destination
+    holder.view.findViewById<TextView>(R.id.text_view_time_span_from).text = "Först tänkbara avgångstid: " + confirmedTrips[position].timeSpanStart.format(DateTimeFormatter.ofPattern("dd MMM HH:mm"))
+    holder.view.findViewById<TextView>(R.id.text_view_time_span_to).text = "Sista tänkbara avgångstid: " + confirmedTrips[position].timeSpanEnd.format(DateTimeFormatter.ofPattern("dd MMM HH:mm"))
   }
 
   override fun getItemCount() = confirmedTrips.size
